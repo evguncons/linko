@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HedefAVM Bağlantılar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #d01379;
+        }
+        .main-container {
+            max-width: 450px;
+        }
+        /* Glassmorphism effect */
+        .glass-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .glass-btn {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .glass-btn:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        /* Fade-in animation for the main container */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-4 overflow-hidden">
+
+    <!-- Ana Konteyner -->
+    <div class="main-container mx-auto p-4 md:p-8 rounded-2xl text-center glass-container relative z-10 animate-fade-in">
+
+        <!-- Logo, Başlık ve İkonlar -->
+        <div class="mb-8 flex flex-col items-center p-4">
+            <!-- Logo -->
+            <div class="mb-4">
+                <img src="https://www.upload.ee/image/18638480/Ads_z_tasar_m__16_.png" alt="Hedef Avm Logo" class="mx-auto w-64">
+            </div>
+
+            <!-- Başlık ve Mavi Tik -->
+            <div class="flex items-center space-x-2">
+                <h1 class="text-2xl font-bold text-white">HedefAVM</h1>
+                <img src="https://www.upload.ee/image/18638458/verified-badge-profile-icon-png.webp" alt="Mavi Tik" class="w-5 h-5">
+            </div>
+            
+            <!-- Sosyal Medya İkonları -->
+            <div class="flex justify-center space-x-6 mt-4">
+                <!-- Instagram İkonu -->
+                <a href="https://www.instagram.com/hedefavm/" target="_blank" aria-label="Instagram">
+                    <img src="https://www.upload.ee/image/18638466/2.png" alt="Instagram Logosu" class="w-8 h-8">
+                </a>
+                <!-- Web Sitesi İkonu -->
+                <a href="https://www.hedefavm.com/" target="_blank" aria-label="Web Sitesi">
+                    <img src="https://www.upload.ee/image/18638474/3.png" alt="Web Sitesi Logosu" class="w-8 h-8">
+                </a>
+            </div>
+        </div>
+
+        <!-- Bağlantılar Bölümü -->
+        <div class="space-y-4">
+            <!-- Bağlantı 1: Web Sitesi -->
+            <a href="https://www.hedefavm.com/" target="_blank" class="glass-btn block max-w-sm mx-auto py-4 px-6 rounded-full font-semibold transition duration-300 text-white">
+                Web Sitesi
+            </a>
+            <!-- Bağlantı 2: Instagram -->
+            <a href="https://www.instagram.com/hedefavm/" target="_blank" class="glass-btn block max-w-sm mx-auto py-4 px-6 rounded-full font-semibold transition duration-300 text-white">
+                Instagram
+            </a>
+            <!-- Bağlantı 3: Form Doldur -->
+            <a href="https://www.hedefavm.com/Form/elden-taksit-basvuru-formu-31" target="_blank" class="glass-btn block max-w-sm mx-auto py-4 px-6 rounded-full font-semibold transition duration-300 text-white">
+                FORM DOLDUR 500₺ KAZAN
+            </a>
+            <!-- Bağlantı 4: Çok Satan Ürünler -->
+            <a href="https://www.hedefavm.com/trend-urunler" target="_blank" class="glass-btn block max-w-sm mx-auto py-4 px-6 rounded-full font-semibold transition duration-300 text-white">
+                Çok Satan Ürünler
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
